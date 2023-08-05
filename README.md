@@ -1,2 +1,2 @@
-# 77121821061_Telecom-Churn_git
-77121821061_Telecom Churn_git NMIMS Project Boot Camp Aug 2023
+# 77121821061_Telecom-Churn
+77121821061_Telecom Churn NMIMS Project Boot Camp Aug 2023
