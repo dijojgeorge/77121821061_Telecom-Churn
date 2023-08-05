@@ -1,2 +1,2 @@
-# 77121821061_Telecom-Churn
-77121821061_Telecom Churn NMIMS Project Boot Camp Aug 2023
+# 77121821061_Telecom_Churn
+77121821061_Telecom_Churn NMIMS Project Boot Camp Aug 2023
