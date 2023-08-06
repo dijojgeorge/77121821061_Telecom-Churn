@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 #RUN /mnt/gdrive
 COPY . https://drive.google.com/open?id=10LrCSxYhRjpM9Ur-oFjJjZ142g6-VyRA&usp=drive_fs
 ENTRYPOINT ["python3"]
-CMD ["app.py"]
+CMD ["C:\ProgramData\Jenkins\.jenkins\workspace\77121821061_Telecom Churn\app.py"]
