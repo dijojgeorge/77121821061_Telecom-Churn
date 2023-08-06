@@ -6,6 +6,6 @@ EXPOSE 8000
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN /mnt/gdrive
-COPY . /G:/My Drive/Colab Notebooks/Telecom_Chrun
+COPY . /gdrive/My Drive/Colab Notebooks/Telecom_Chrun
 ENTRYPOINT ["python3"]
 #CMD ["G:\My Drive\Colab Notebooks\Telecom_Chrun\app.py"]
