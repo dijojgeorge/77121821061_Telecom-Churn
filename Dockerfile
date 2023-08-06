@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 RUN /mnt/gdrive
 COPY . /G:/My Drive/Colab Notebooks/Telecom_Chrun/
 ENTRYPOINT ["python3"]
-#CMD ["G:\My Drive\Colab Notebooks\Telecom_Chrun\app.py"]
+CMD ["https://drive.google.com/open?id=11BXbqIpzXEbNeN-UfTGAUEgSBbpKndo5&usp=drive_fs"]
