@@ -1,5 +1,6 @@
 #!/bin/sh -xe
-export PATH=$PATH:/usr/local/bin
+export PATH=https://drive.google.com/open?id=10LrCSxYhRjpM9Ur-oFjJjZ142g6-VyRA&usp=drive_fs
+#$PATH:/usr/local/bin
 if [ $( docker ps -a -q --filter ancestor=telecom --format="{{.ID}}" | wc -l ) -gt 0 ]; then
 	docker rm $(docker stop $(docker ps -a -q --filter ancestor=telecom --format="{{.ID}}"))
 fi
