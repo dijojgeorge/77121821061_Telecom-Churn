@@ -6,5 +6,5 @@ EXPOSE 8000
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 #COPY . /G:/My Drive/Colab Notebooks/Telecom_Chrun
-ENTRYPOINT ["python3"]
+ENTRYPOINT ["python"]
 #CMD ["Form_Enduser.py"]
