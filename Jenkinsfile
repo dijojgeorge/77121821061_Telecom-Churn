@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Build your Docker image using Dockerfile in the project directory
                 script {
-                    sh "docker build -t 77121821061_Telecom_Churn:TC ."
+                    bat 'sh "docker build -t 77121821061_Telecom_Churn:TC ."'
                     }
             }
         } 
@@ -26,9 +26,26 @@ pipeline {
             steps {
                 // Run your Docker image using Dockerfile in the project directory
                 script {
-                    sh 'docker run 77121821061_Telecom_Churn:TC'
+                    bat 'sh \'docker run 77121821061_Telecom_Churn:TC\''
+                }
+            }
+        }
+         stage('Push Docker Image') {
+            steps {
+                // Login to Docker or your preferred container registry
+                script {
+                    bat 'sh "docker login -u dijojgeorge --password-stdin Logindijo@1"'
                 }
             }
         }        
+    }
+
+    post {
+        always{
+            // Clean up any temporary files or resoruces if needed 
+            // For example, clean up docker images and containers
+            bat 'sh \'docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}\''
+            bat 'sh \' docker system prune - f\''
+        }
     }
 }
