@@ -1,5 +1,5 @@
 FROM python
-WORKDIR /AppPython
+WORKDIR /mnt/gdrive
 ENV DRIVE_PATH="/mnt/gdrive"
 COPY requirements.txt ./
 EXPOSE 8000
